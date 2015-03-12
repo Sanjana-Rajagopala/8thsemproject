@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" stylesheets="@DarkView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TableView fx:id="LogTable" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="600.0" stylesheets="@DarkView.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="datecolumn" prefWidth="68.0" text="Date" />
+            <TableColumn fx:id="timestampcolumn" prefWidth="90.5" text="TimeStamp" />
+            <TableColumn fx:id="levelcolumn" prefWidth="56.9166259765625" text="Level" />
+            <TableColumn fx:id="locationcolumn" prefWidth="107.59722900390625" text="Location" />
+            <TableColumn fx:id="infocolumn" prefWidth="71.0" text="RequestId/Process Id" />
+            <TableColumn fx:id="messagecolumn" prefWidth="218.0" text="Message" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
